@@ -1,11 +1,13 @@
 # netio-4c-prometheus
 
-prometheus scraper for netio 4c
-
 This PDU is great but it does not have inbuilt consumption graphing
 https://www.netio-products.com/en/device/powerpdu-4c
 
-But prometheus can be used to provision it.
+But prometheus + graphana can be used instead.
+
+This piece of software is a prometheus compatible gateway for netio 4c PDU metrics. It will scrape the JSON "read API" status and make the collected metrics available to prometheus which will in turn scrape them.
+
+Example Grafana dashboard TBD.
 
 ## usage as a nodejs app
 
