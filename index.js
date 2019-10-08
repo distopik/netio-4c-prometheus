@@ -1,8 +1,8 @@
 const P = require('prom-client')
 const A = require('axios')
 const app = require('express')()
-const endpoint = `${process.env['NETIO_DEVICE_URL'] || 'http://10.10.1.153'}/netio.json`
-const interval = parseInt(process.env['SCRAPE_INTERVAL']) || 1000
+const endpoint = `${process.env['NETIO_DEVICE_URL'] || 'http://10.10.1.153/netio.json'}`
+const interval = parseInt(process.env['SCRAPE_INTERVAL']) || 5000
 
 const PortStatus = new P.Gauge({
   name: 'netio_4c_port_status',
