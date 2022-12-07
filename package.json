@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/distopik/netio-4c-prometheus#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "prom-client": "^11.5.3",
     "axios": "0.21.1"
   }
